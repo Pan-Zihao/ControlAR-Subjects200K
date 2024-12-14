@@ -1,12 +1,9 @@
 # 使用Subjects200K训练ControlAR
 
----
-
 注意：这是根据ControlAR官方仓库中train_t2i_control.py修改而来，为了简单起见，去掉了混合精度、ema和DDP，这只是一个简单的示例，可以根据需要修改。
 
 ## Getting Started
 
----
 ### Installation
 ```bash
 conda create -n ControlAR python=3.10
@@ -74,7 +71,6 @@ python subjects200K.py
 注意：修改成自己的路径，最后的metafile会保存成一个json文件，后面只需要用到这个metafile
 ## 开始训练
 
----
 ### 对图像VQ编码
 使用checkpoints中下好的vq对数据集中图片进行编码，保存在code文件夹中，格式为.npy。
 autoregressive/train/extract_codes_t2i.py
